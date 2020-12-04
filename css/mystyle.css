@@ -1,0 +1,83 @@
+/* 格式化样式 */
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	list-style: none;
+}
+body{
+	/* width: 1000px; */
+	height: 800px;
+	/* height: 110%; */
+	background-color: #c9dacc;
+}
+html{
+	font-size: 18px;
+}
+
+.bg img{
+	display: block;
+	width: 18.75rem;
+	margin: 1.875rem auto;
+}
+.header{
+	width: 50rem;
+	height: 3.125rem;
+	/* background-color: pink; */
+	margin: 0 auto;
+}
+.header input{
+	width: 45rem;
+	height: 3.125rem;
+	float: left;
+	border: 2px solid #3c8d74;
+	box-sizing: border-box;
+	padding-left: 0.625rem;
+	font-size: 1.125rem;
+}
+.header span{
+	float: right;
+	display: block;
+	width: 5rem;
+	height: 3.125rem;
+	background-color: #1e634e;
+	color: white;
+	line-height: 3.125rem;
+	text-align: center;
+}
+.content{
+	width: 62.5rem;
+	/* background-color: pink; */
+	margin: 1.875rem auto;
+}
+.content .items{
+	float: left;
+	width: 12.5rem;
+	/* background-color: #5F9EA0; */
+	color: coral;
+	border: 1px solid #71b49c;
+	box-sizing: border-box;
+}
+.content .items img{
+	width: 12.5rem;
+	height: 9.375rem;
+}
+.content .items .weather{
+	height: 3.125rem;
+	line-height: 3.125rem;
+	text-align: center;
+	font-size: 2.25rem;
+}
+.content .items .temp{
+	height: 2.5rem;
+	line-height: 2.5rem;
+	text-align: center;
+	font-size: 1.125rem;
+}
+.content .items .date{
+	height: 1.875rem;
+	line-height: 1.875rem;
+	text-align: center;
+	font-size: 0.875rem;
+}

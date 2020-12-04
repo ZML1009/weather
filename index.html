@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/mystyle.css" />
+	</head>
+	<body>
+		<div class="bg" id="weather">
+			<img src="img/logo.png" />
+			<div class="header">
+				<input type="text" v-model="city" @keyup.enter="searchWeather"/>
+				<span @click="searchWeather()">搜索</span>
+			</div>
+			<div class="content">
+				<div class="items" v-for="item in weatherList">
+					<p class="weather">{{item.type}}</p>
+					<img v-if="item.type==xiaoyu" src="img/小雨.gif" />
+					<img v-if="item.type==duoyun" src="img/多云.gif" />
+					<img v-if="item.type==dayu" src="img/大雨.gif" />
+					<img v-if="item.type==zhongyu" src="img/大雨.gif" />
+					<img v-if="item.type==yin" src="img/多云转阴.gif" />
+					<img v-if="item.type==leizhenyu" src="img/雷阵雨.gif" />
+					<img v-if="item.type==qing" src="img/晴.gif" />
+					<img v-if="item.type==xue" src="img/雪.gif" />
+					<img v-if="item.type==xiaoxue" src="img/雪.gif" />
+					<p class="temp">{{item.low}}&nbsp;~&nbsp;{{item.high}}</p>
+					<p class="date">{{item.date}}</p>
+				</div>
+
+			</div>
+		</div>
+		
+		
+		
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="js/myjs.js"></script>
+		
+		<script type="text/javascript" class="autoinsert" src="js/jquery-1.2.6.min.js"></script>
+		<script src="js/snowfall.jquery.js"></script> 
+		<script>
+		        $(document).snowfall('clear');
+		        $(document).snowfall({
+		            image: "img/huaban.png",
+		            flakeCount:30,
+		            minSize: 30,
+		            maxSize: 20
+		        });
+		    </script>
+	</body>
+</html>
